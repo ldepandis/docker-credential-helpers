@@ -23,11 +23,11 @@ osxcodesign: osxkeychain
 
 secretservice:
 	mkdir -p bin
-	go build -o bin/docker-credential-secretservice secretservice/cmd/main_linux.go
+	go build -o bin/docker-credential-secretservice secretservice/cmd/main.go
 
 pass:
 	mkdir -p bin
-	go build -o bin/docker-credential-pass pass/cmd/main_linux.go
+	go build -o bin/docker-credential-pass pass/cmd/main.go
 
 wincred:
 	mkdir -p bin
